@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- creating a header for webpage -->
+    <header>
+        <!-- setting up the navigation bar and the main title of the webpage -->
+        <nav class="navigation">
+            <li class="aboutMeButton"><a href="#aboutMe">About Me</a></li>
+            <li class="educationButton"><a href="#education">Education</a></li>
+            <li class="title">Joseph Teklu</li>
+            <li class="projectsButton"><a href="#projects">Projects</a></li>
+            <li class="contactMeButton"><a href="#contactMe">Contact</a></li>
+        </nav>
+    </header>
+
+    <!-- creating a div for the portfolio profile picture-->
+    <div class="portfolioMainPicture"></div>
+    <!-- creating the about me section -->
+    <section class="aboutMe" id="aboutMe">
+        <h2>About Me</h2>
+        <!-- adding in about me section -->
+        <p> Hi, my name is Joseph but you can call me Joe. I started my journey by teaching myself a bit of python from
+            books.
+            I was lucky enough to have a Junior Developer apperenticship where I learned C# and got experience in
+            writing production
+            code used by the company to this day. I attended CU Boulder for two years and learned C++, Data Structures
+            and Algorithms.
+            That brings me to today where I am learning full stack development in a bootcamp at DU!
+        </p>
+    </section>
+
+    <!-- creating a div for the cu boulder picture above the education section-->
+    <div class="educationPicture"></div>
+    <!-- creating the education section -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <ul>
+            <!-- putting education credentials in a list item -->
+            <li> 2020 - 2022 | B.A Computer Science at University of Colorado Boulder </li>
+            <li> 2023 - current | Denver University Full Stack Development Course</li>
+        </ul>
+    </section>
+
+    <!-- creating a div for the image above the projects section -->
+    <div class="projectsPicture"></div>
+    <!-- creating the projects section -->
+    <section class="projectsContainer" id="projects">
+        <!-- the title for the projects box -->
+        <h2>Projects</h2>
+        <!-- 
+            each section of the projects container is wrapped in an (a) tag that links to the projects github.
+            each project also has a title inside of it's box 
+        -->
+        <div class="projects">
+            <a class="individualProject numberGuessingGame" href="https://github.com/JosephTeklu/Projects-/blob/master/Number%20Guessing%20Game">
+                <section><h3>Number Guessing Game</h3></section>
+            </a>
+            <a class="individualProject contactsApp" href="https://github.com/JosephTeklu/Projects-/tree/master/Contacts">
+                <section><p>Contacts App</p></section>
+            </a>
+            <a class="individualProject webScraping" href="https://github.com/JosephTeklu/Projects-/tree/master/CS_WebScraperLearning">
+                <section><p>Web Scraping</p></section>
+            </a>
+            <a class="individualProject preWorkStudyGuide" href="https://github.com/JosephTeklu/josephteklu.github.io">
+                <section><p>Pre-Work Study Guide</p></section>
+            </a>
+            <a class="individualProject personalOS" href="https://github.com/JosephTeklu/Projects-/tree/master/OS">
+                <section><p>Personal Operating System</p></section>
+            </a>
+        </div>
+    </section>
+
+    <!-- creating a div for the contacts main image-->
+    <div class="contactMePicture"></div>
+    <!-- creating the education section -->
+    <section class="contactMe" id="contactMe">
+        <h2>Contact Me</h2>
+        <ul>
+            <!-- adding in  -->
+            <p class="email"><a href="mailto:jteklu@outlook.com">Email</a></p>
+            <p class="github"><a href="https://github.com/JosephTeklu">Github</a></p>
+        </ul>
+    </section>
+
+    <!-- creating footer -->
+    <footer class="footer">
+        <p>Made with ❤️ with HTML/CSS</p>
+    </footer>
+
+</body>
+
+</html>

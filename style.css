@@ -1,0 +1,172 @@
+/* setting variables for colors on the webpage */
+:root{
+    --backgroundColor: navy;
+    --blackTextColor: black;
+    --whiteTitleTextColor: white;
+    --sectionBackGroundColor: #666;
+    --projectBoxTitleColor: red;
+    --projectBoxBorderColor: green;
+} 
+
+/* making sure everyting in the body and html have a height of 100% and a margin of 0 */
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+/* stylizing the navigation bar */
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    background-color: var(--backgroundColor);
+    color: var(--whiteTitleTextColor);
+
+    font-size: 40px;
+    align-items: center;
+}
+
+/* stylizing "Joseph Teklu" the title of the webpage*/
+.title{
+    font-weight: bold;
+    font-size: 65px;
+}
+
+/* stylizing the buttons on the navigation bar */
+.aboutMeButton, .educationButton, .projectsButton, .contactMeButton{
+    background-color: var(--blackTextColor);
+    position: relative;
+    margin: 32px;
+}
+/* taking out the underline in each link in the html */
+a{text-decoration: none;}
+
+/* stylizing the pictures for the parallax effect */
+.portfolioMainPicture, .educationPicture, .projectsPicture, .contactMePicture{
+    position:relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* allows parallax viewing */
+    background-attachment: fixed;
+}
+/* adding in main profile picture */
+.portfolioMainPicture{
+    background-image:url(/images/MainPageProfilePicture.jpg);
+    background-position:top;
+    min-height:100%;
+}
+/* adding in CU Boulder picture */
+.educationPicture{
+    background-image:url(/images/CuBoulderPicture.jpg);
+    min-height: 75%;
+}
+/* adding in the picture above the projects container */
+.projectsPicture{
+    background-image:url(/images/ProjectsMainImage.jpg);
+    min-height: 75%;
+}
+/* adding in the picture above the contacts container */
+.contactMePicture{
+    background-image: url(/images/PeopleShakingHands.avif);
+    min-height: 80%;
+}
+/* stylizing each section's box */ 
+.aboutMe, .education, .projectsContainer, .contactMe, .footer{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height:1.8em;
+    font-size: 20px;
+    background-color: var(--sectionBackGroundColor);
+    text-align: center;
+    color: var(--blackTextColor);
+}
+/* stylizing each sections title */
+.aboutMe h2, .education h2, .projects h2{
+    text-align: center;
+    color:var(--blackTextColor);
+    font-weight: bold;
+    
+    font-size: 50px;
+}
+/* centiring the bullitpoints in the Education section */
+.education ul {
+    list-style-position: inside;
+}
+
+/* stylizing the projects boxes */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* stylizing each box in the projects section */
+.projects .individualProject {
+    flex: 0 0 45%;
+    height: 150px;
+    border: solid 3px green;
+    margin-bottom: 10px;
+    color: var(--projectBoxTitleColor);
+}
+/* making sure the first project is bigger than the rest */
+.projects .individualProject:first-child {
+    flex: 0 0 99%;
+    height: 300px;
+}
+
+/* giving the number guessing game project it's backgroud image */
+.numberGuessingGame {
+    background-image: url("./images/NumberGuessingGame_ss.JPG");
+    background-size: cover;
+}
+/* giving the Contacts App project it's backgroud image */
+.contactsApp {
+    background-image: url("./images/ContactsApp_ss.JPG");
+    background-size: cover;
+}
+/* giving the Web Scrapingst project it's backgroud image */
+.webScraping {
+    background-image: url("./images/PizzaDeliveryWebScraping_ss.JPG");
+    background-size: cover;
+}
+/* giving the Pre-Work Study Guide project it's backgroud image */
+.preWorkStudyGuide {
+    background-image: url("./images/PreWorkStudyGuide_ss.JPG");
+    background-size: cover;
+}
+/* giving the Personal Operating System project it's backgroud image */
+.personalOS {
+    background-image: url("./images/PersonalOperatingSystem_ss.JPG");
+    background-size: cover;
+}
+
+/* stylizing the Contact me section */
+.contactMe ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+    height: 50px;
+    align-items: center;
+}
+
+/* making sure that screens under 674 pixles stack the projects */
+@media screen and (max-width: 674px) {
+    .projects .individualProject {
+        flex: 0 0 99%;
+        height: 200px;
+    }
+}
+
+/* stylyzing the footer */
+.footer{
+    text-align: center;
+    background-color: var(--backgroundColor);
+    color: var(--whiteTitleTextColor);
+    line-height: 10px;
+}
+

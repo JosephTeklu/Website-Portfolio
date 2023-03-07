@@ -55,23 +55,23 @@ a{text-decoration: none;}
 }
 /* adding in main profile picture */
 .portfolioMainPicture{
-    background-image:url("/images/MainPageProfilePicture.jpg");
+    background-image:url("./images/MainPageProfilePicture.jpg");
     background-position:top;
     min-height:100%;
 }
 /* adding in CU Boulder picture */
 .educationPicture{
-    background-image:url("/images/CuBoulderPicture.jpg");
+    background-image:url("./images/CuBoulderPicture.jpg");
     min-height: 75%;
 }
 /* adding in the picture above the projects container */
 .projectsPicture{
-    background-image:url("/images/ProjectsMainImage.jpg");
+    background-image:url("./images/ProjectsMainImage.jpg");
     min-height: 75%;
 }
 /* adding in the picture above the contacts container */
 .contactMePicture{
-    background-image: url("/images/PeopleShakingHands.avif");
+    background-image: url("./images/PeopleShakingHands.avif");
     min-height: 80%;
 }
 /* stylizing each section's box */ 
